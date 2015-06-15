@@ -1,0 +1,32 @@
+{
+  "name": "TIY-Catalog",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server --startPath src/index.html",
+    "bower:install": "bower install --save",
+    "postbower:install": "wiredep --src src/index.html",
+    "sass": "node-sass src/scrss/main.scss -o src/css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pope410211/TIY-Catalog.git"
+  },
+  "author": "Nick Pope (pope410211)",
+  "license": "CCO",
+  "bugs": {
+    "url": "https://github.com/pope410211/TIY-Catalog/issues"
+  },
+  "homepage": "https://github.com/pope410211/TIY-Catalog",
+  "dependencies": {
+    "wiredep": "^2.2.2"
+  },
+  "devDependencies": {
+    "bower": "^1.4.1",
+    "browser-sync": "^2.7.10",
+    "node-sass": "^3.2.0",
+    "wiredep": "^2.2.2"
+  }
+}
