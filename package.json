@@ -8,7 +8,7 @@
     "start": "browser-sync start --server --startPath src/index.html",
     "bower:install": "bower install --save",
     "postbower:install": "wiredep --src src/index.html",
-    "sass": "node-sass src/scrss/main.scss -o src/css/"
+    "sass": "node-sass src/scss/main.scss -o src/css/"
   },
   "repository": {
     "type": "git",
