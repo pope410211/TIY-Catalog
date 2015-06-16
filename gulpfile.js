@@ -29,13 +29,12 @@ gulp.task('clean', function(done){
   var del = require('del');
 
   del([
-    'dist/**/*.*',
     'dist/*',
     '!dist/.gitignore'
   ], done);
 });
 
-gulp.task('build', [ 'sass' ], function(){
+gulp.task('build', [ 'clean', 'sass' ], function(){
   gulp.src([// gulp.from
     'src/*', '!src/scss'
   ])
