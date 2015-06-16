@@ -16,7 +16,14 @@ gulp.task('sass', function(){
     .pipe(gulp.dest('src/css/'))
     .pipe(sass({ outputStyle: 'compressed'}))
     .pipe(gulp.dest('dist/css/'))
-})// END gulp.task(sass)
+});// END gulp.task(sass)
+
+gulp.task('watch', function(){
+  gulp.watch('src/scss/*.scss', ['sass'], function(){
+    console.log('In your Sass files...', 'Building you CSS');
+  });
+  gulp.watch('src/*html', ['build']);
+})
 
 gulp.task('build', [ 'sass' ], function(){
   gulp.src([// gulp.from
