@@ -1,9 +1,14 @@
+.sort {
+  //float: right;
+}
+
 .column {
     display: inline-block;
     font-size: 14px;
     border: 1px solid lightgrey;
     border-radius: 2%;
     margin: 0.5em;
+
 }
 .column img {
     width: 17em;
@@ -25,4 +30,19 @@
     float: right;
     margin: 0;
     color: green;
+}
+
+.shop-suggestion {
+  display: inline-block;
+}
+
+.footer {
+  margin: 2em;
+}
+
+.shop-suggestion a {
+  padding: 1em;
+}
+.pagination a {
+  padding: 1em;
 }
