@@ -18,83 +18,92 @@
 
 <body>
     <div class="grid">
-        <div class="unit-span-3">
+        <div class="unit-span-4">
             <h5>Show results for:</h5>
             <aside class="leftBox" id="categorySelector">
                 <h5><a href="#">All categories</a></h5>
                 <ul>
-                    <li class= "listPadding"><a href="#">Jewelry</a></li>
-                    <li class= "listPadding"><a href="#">Craft Supplies &amp; Tools</a></li>
-                    <li class= "listPadding"><a href="#">Home &amp; Living</a></li>
-                    <li class= "listPadding"><a href="#">Art &amp; Collectibles</a></li>
-                    <li class= "listPadding"><a href="#">Accessories</a></li>
-                    <li class= "listPadding"><a href="#">Clothing</a></li>
-                    <li class= "listPadding"><a href="#">Paper &amp; Party Supplies</a></li>
-                    <li class= "listPadding"><a href="#">Bath &amp; Beauty</a></li>
-                    <li class= "listPadding"><a href="#">Bags &amp; Purses</a></li>
-                    <li class= "listPadding"><a href="#">Weddings</a></li>
-                    <li class= "listPadding"><a href="#">Toys &amp; Games</a></li>
-                    <li class= "listPadding"><a href="#">Books, Movies &amp; Music</a></li>
-                    <li class= "listPadding"><a href="#">Electronics &amp; Accessories</a></li>
-                    <li class= "listPadding"><a href="#">Pet Supplies</a></li>
-                    <li class= "listPadding"><a href="#">Shoes</a></li>
+                    <li class="listPadding"><a href="#">Jewelry</a></li>
+                    <li class="listPadding"><a href="#">Craft Supplies &amp; Tools</a></li>
+                    <li class="listPadding"><a href="#">Home &amp; Living</a></li>
+                    <li class="listPadding"><a href="#">Art &amp; Collectibles</a></li>
+                    <li class="listPadding"><a href="#">Accessories</a></li>
+                    <li class="listPadding"><a href="#">Clothing</a></li>
+                    <li class="listPadding"><a href="#">Paper &amp; Party Supplies</a></li>
+                    <li class="listPadding"><a href="#">Bath &amp; Beauty</a></li>
+                    <li class="listPadding"><a href="#">Bags &amp; Purses</a></li>
+                    <li class="listPadding"><a href="#">Weddings</a></li>
+                    <li class="listPadding"><a href="#">Toys &amp; Games</a></li>
+                    <li class="listPadding"><a href="#">Books, Movies &amp; Music</a></li>
+                    <li class="listPadding"><a href="#">Electronics &amp; Accessories</a></li>
+                    <li class="listPadding"><a href="#">Pet Supplies</a></li>
+                    <li class="listPadding"><a href="#">Shoes</a></li>
                 </ul>
             </aside>
             <h5>Refine your Search</h5>
-            <aside class="leftBox">
-                <section>
+            <aside class="leftBox" id="refineSearch">
+                <section id="itemType">
                     <h5>Item Type</h5>
                     <ul>
                         <li>
-                            <input type="checkbox"><a href="#">All Items</a></li>
+                            <input type="radio"> <a href="#">All Items</a></li>
                         <li>
-                            <input type="checkbox"><a href="#">Handmade</a></li>
+                            <input type="radio"> <a href="#">Handmade</a></li>
                         <li>
-                            <input type="checkbox"><a href="#">Vintage</a></li>
+                            <input type="radio"> <a href="#">Vintage</a></li>
                     </ul>
                 </section>
-                <section>
+                <section id="price">
                     <h5>Price</h5>
-                    <input type="text">
+                    <div class="currencyinput">
+                        <span>$
+                            <input type="text" placeholder="low">
+                        </span>
+                    </div>
                     <span>to</span>
-                    <input type="text">
+                    <div class="currencyinput">
+                        <span>$
+                            <input type="text" placeholder="high">
+                        </span>
+                    </div>
+                    <button>&#9654;</button>
                 </section>
-                <section>
+                <section id="color">
                     <h5>Filter by Color</h5>
                     <div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                        <div class="color red"></div>
+                        <div class="color orange"></div>
+                        <div class="color yellow"></div>
+                        <div class="color green"></div>
+                        <div class="color blue"></div>
+                        <div class="color purple"></div>
+                        <div class="color black"></div>
+                        <div class="color"></div>
                     </div>
                 </section>
-                <section>
+                <section id="orderOptions">
                     <h5>Ordering Options</h5>
                     <ul>
                         <li>
-                            <input type="checkbox"><a href="#">In Your Favorites</a></li>
+                            <input type="checkbox"> <a href="#">In Your Favorites</a></li>
                         <li>
-                            <input type="checkbox"><a href="#">Accepts Etsy Gift Cards</a></li>
+                            <input type="checkbox"> <a href="#">Accepts Etsy Gift Cards</a></li>
                         <li>
-                            <input type="checkbox"><a href="#">Customizable</a></li>
+                            <input type="checkbox"> <a href="#">Customizable</a></li>
                     </ul>
                 </section>
-                <section>
+                <section id="shopLoc">
                     <h5>Shop Location</h5>
                     <ul>
                         <li>
-                            <input type="checkbox"><a href="#">Anywhere</a></li>
+                            <input type="radio"> <a href="#">Anywhere</a></li>
                         <li>
-                            <input type="checkbox"><a href="#">United States</a></li>
+                            <input type="radio"> <a href="#">United States</a></li>
                         <li>
                             <a href="#">Choose a custom location</a></li>
                     </ul>
                 </section>
-                <section>
+                <section id="shipTo">
                     <h5>Ship To</h5>
                     <select name="shipTo">
                         <option value="value1">Value 1</option>
