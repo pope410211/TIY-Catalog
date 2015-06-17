@@ -1,34 +1,172 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- bower:css -->
-        <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css" />
-        <!-- endbower -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    </head>
-    <body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css" />
+    <!-- endbower -->
 
-      <div class="shop-suggestion">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+
+    <h2>Show results for:</h2>
+    <aside>
+        <h2><a href="#">All categories</a></h2>
+        <ul>
+            <li><a href="#">Jewelry</a></li>
+            <li><a href="#">Craft Supplies &amp; Tools</a></li>
+            <li><a href="#">Home &amp; Living</a></li>
+            <li><a href="#">Art &amp; Collectibles</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Clothing</a></li>
+            <li><a href="#">Paper &amp; Party Supplies</a></li>
+            <li><a href="#">Bath &amp; Beauty</a></li>
+            <li><a href="#">Bags &amp; Purses</a></li>
+            <li><a href="#">Weddings</a></li>
+            <li><a href="#">Toys &amp; Games</a></li>
+            <li><a href="#">Books, Movies &amp; Music</a></li>
+            <li><a href="#">Electronics &amp; Accessories</a></li>
+            <li><a href="#">Pet Supplies</a></li>
+            <li><a href="#">Shoes</a></li>
+        </ul>
+    </aside>
+    <aside>
+        <section>
+            <h2>Item Type</h2>
+            <ul>
+                <li>
+                    <input type="checkbox"><a href="#">All Items</a></li>
+                <li>
+                    <input type="checkbox"><a href="#">Handmade</a></li>
+                <li>
+                    <input type="checkbox"><a href="#">Vintage</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Price</h2>
+            <input type="text">
+            <span>to</span>
+            <input type="text">
+        </section>
+        <section>
+            <h2>Filter by Color</h2>
+            <div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </section>
+        <section>
+            <h2>Ordering Options</h2>
+            <ul>
+                <li>
+                    <input type="checkbox"><a href="#">In Your Favorites</a></li>
+                <li>
+                    <input type="checkbox"><a href="#">Accepts Etsy Gift Cards</a></li>
+                <li>
+                    <input type="checkbox"><a href="#">Customizable</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Shop Location</h2>
+            <ul>
+                <li>
+                    <input type="checkbox"><a href="#">Anywhere</a></li>
+                <li>
+                    <input type="checkbox"><a href="#">United States</a></li>
+                <li>
+                    <a href="#">Choose a custom location</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Ship To</h2>
+            <select name="shipTo">
+                <option value="value1">Value 1</option>
+                <option value="value2">Value 2</option>
+                <option value="value3">Value 3</option>
+            </select>
+        </section>
+    </aside>
+
+    <section class="results">
+        <nav class="listing-results">
+            <div>
+                <a href="#categories">
+                    <p>All Categories</p>
+                </a>
+                <p>(15,000,000 Results)</p>
+            </div>
+            <div>
+                <p>Sort by</p>
+                <select>
+                    <option>Most Recent</option>
+                    <option>Relevancy</option>
+                    <option>Lowest Price</option>
+                    <option>Highest Price</option>
+                </select>
+            </div>
+
+        </nav>
+        <div class="column">
+            <a href="#listing">
+                <img src="http://lorempixel.com/75/75/sports">
+                <h4>Original Crap You Must Buy</h4>
+            </a>
+            <a href="#username">
+                <p>Username</p>
+            </a>
+            <p>$10</p>
+        </div>
+        <div class="column">
+            <a href="#listing">
+                <img src="http://lorempixel.com/75/75/cats">
+                <h4>Original Expensive Crap</h4>
+            </a>
+            <a href="#username">
+                <p>Username</p>
+            </a>
+            <p>$100</p>
+        </div>
+        <div class="column">
+            <a href="#listing">
+                <img src="http://lorempixel.com/75/75/cities">
+                <h4>Original Overpriced Crap</h4>
+            </a>
+            <a href="#username">
+                <p>Username</p>
+            </a>
+            <p>$1000</p>
+        </div>
+    </section>
+
+    <div class="shop-suggestion">
         <p>Looking for shops?</p>
         <span class="shops">
-          <a href="#username1">JohnDoe</a>
-          <a href="#username2">Batman</a>
-          <a href="#username3">MarioBro</a>
+            <a href="#username1">JohnDoe</a>
+            <a href="#username2">Batman</a>
+            <a href="#username3">MarioBro</a>
         </span>
         <a href="#seeMoreShops">See more</a>
-      </div>
+    </div>
 
-      <div class="pagination">
+    <div class="pagination">
         <a class="previous-page">
-          <span class=" "><</span>
+            <span class=" ">
+                <</span>
         </a>
         <a href="#page-1">1</a>
         <a href="#page-2">2</a>
@@ -41,19 +179,20 @@
         <a href="#pages">...</a>
         <a href="#page-250">250</a>
         <a class="next-page">
-          <span class=" ">></span>
+            <span class=" ">></span>
         </a>
 
-      </div>
+    </div>
 
-      <!-- bower:js -->
-      <script src="../bower_components/modernizr/modernizr.js"></script>
-      <script src="../bower_components/jquery/dist/jquery.js"></script>
-      <script src="../bower_components/lodash/lodash.js"></script>
-      <script src="../bower_components/vue/dist/vue.js"></script>
-      <!-- endbower -->
+    <!-- bower:js -->
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/lodash/lodash.js"></script>
+    <script src="../bower_components/vue/dist/vue.js"></script>
+    <!-- endbower -->
     <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 
-    </body>
+</body>
+
 </html>
