@@ -1,0 +1,32 @@
+
+.column {
+  display: inline-block;
+  padding: 1em;
+  font-size: 14px;
+}
+
+.column img {
+  width: 15em;
+  height: 15em;
+}
+
+.column h4 {
+  margin: 0;
+}
+.column a {
+  text-decoration: none;
+  color: black;
+  font-weight: lighter;
+}
+
+.column .username {
+  float: left;
+  margin: 0;
+  color: darkgrey;
+}
+
+.column .price {
+  float: right;
+  margin: 0;
+  color: green;
+}
