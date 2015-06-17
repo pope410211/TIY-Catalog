@@ -1,5 +1,14 @@
+
+.results {
+  margin-top: 2em;
+}
+
 .sort {
-  //float: right;
+  float: right;
+}
+
+.listings {
+  width: 100%;
 }
 
 .column {
@@ -7,12 +16,11 @@
     font-size: 14px;
     border: 1px solid lightgrey;
     border-radius: 2%;
-    margin: 0.5em;
-
+    margin: 1em;
 }
 .column img {
-    width: 17em;
-    height: 15em;
+    width: 15em;
+    height: 13em;
 }
 .column h4 {
     margin: 0;
