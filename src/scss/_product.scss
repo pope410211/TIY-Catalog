@@ -1,0 +1,100 @@
+body {
+  background-color: #F8F8F5;
+}
+
+.header-row {
+  margin-top: 2.5em;
+
+  .shop-icon {
+    display: inline-block;
+
+    .img-box {
+      display: inline-block;
+      width: 75px;
+      height: 75px;
+
+      img {
+        height: auto;
+        width: auto;
+      }
+    }
+
+    .shop-name-fav {
+    display: inline-block;
+    padding-left: 1ex;
+
+      h4 {
+        margin: 0;
+        line-height: 2ex;
+        a {
+          text-decoration: none;
+          font-family: serif;
+          font-size: 2.75ex;
+          color: black;
+        }
+      }
+    }
+  }
+
+  .image-list {
+    text-align: right;
+
+    .img-box {
+      display: inline-block;
+      width: 75px;
+      height: 75px;
+      margin: 0 1ex;
+      text-align: center;
+      border: .5ex solid white;
+      vertical-align: top;
+
+      img {
+        width: auto;
+        height: auto;
+      }
+
+      a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        box-sizing: border-box;
+        height: 75px;
+        background-color: white;
+
+
+        .item-count {
+          display: block;
+          font-size: 2.25ex;
+          color: #0192B5;
+          padding-top: 1ex;
+        }
+
+        span {
+          font-size: 1.5ex;
+        }
+      }
+
+      a:hover {
+        background-color: #CCE9F0;
+      }
+    }
+  }
+}
+
+.favorite-shop {
+  background-color: #F0F1F1;
+  border: 1px solid #DCD9D5;
+  border-radius: 2.5px;
+  font-size: 1.5ex;
+  font-weight: 400;
+  color: #726B67;
+  line-height: 3ex;
+
+  span {
+    padding-right: 1ex;
+  }
+}
+
+button:hover {
+  background-color: white;
+}
