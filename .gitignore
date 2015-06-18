@@ -1,2 +1,7 @@
 node_modules
 bower_components
+dist/404.html
+dist/LICENSE.txt
+dist/css
+dist/index.html
+dist/js
