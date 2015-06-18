@@ -14,4 +14,10 @@ $.getJSON('../../api/etsy/total-listing.json')
   $productTitle = $('#productinfo');
   $productTitle.text(totalList.results[0].title)
 
+  $productCost = $('#cost');
+  $productCost.text(totalList.results[0].price)
+
+  $productCurrency = $('#money');
+  $productCurrency.text(totalList.results[0].currency_code)
+
 });
