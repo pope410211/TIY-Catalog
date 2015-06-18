@@ -1,10 +1,16 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
+var sass = require('gulp-sass');
+var = require('gulp-useref')
 
 // // Static Server + watching scss/html files
 gulp.task('serve', ['sass'], function() {
  browserSync.init({
      server: "src/"
+     routes: {
+       "/bower_components": "bower_components",
+       "/cache": "api/etsy"
+     }
  });
 
  gulp.watch("src/scss/*.scss", ['sass']);
@@ -15,7 +21,6 @@ gulp.task('serve', ['sass'], function() {
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function(){
  // node-sass src/scss/main.scss -o src/css/
- var sass = require('gulp-sass');
 
 
  gulp.src('src/scss/main.scss')
