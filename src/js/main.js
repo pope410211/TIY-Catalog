@@ -11,4 +11,7 @@ $.getJSON('../../api/etsy/total-listing.json')
   $storePic = $('a', 'img#storepic');
   $storePic.attr('src', totalList.results[0].Images.url_75x75);
 
+  $productTitle = $('#productinfo');
+  $productTitle.text(totalList.results[0].title)
+
 });
