@@ -134,7 +134,61 @@ body {
     }
   }
 
-  
+  .tab-row {
+    width: 90%;
+    border-bottom: 1px solid #DADBD6;
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+    margin-top: 2.5em;
+
+    li {
+      display: inline-block;
+      border-top: 1px solid #DADBD6;
+      border-left: 1px solid #DADBD6;
+      border-bottom: 1px solid #DADBD6;
+      margin-bottom: -1px;
+      background-color: #F5F6F1;
+
+      a {
+        display: block;
+        box-sizing: border-box;
+        height: 2.5em;
+        padding: 1.25ex 2ex 0 2ex;
+        text-decoration: none;
+        color: #0292B5;
+      }
+
+      .review-rating:before {
+        content: "\2605";
+        color: #FFDC1E;
+        padding-right: .5ex;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .active {
+      display: inline-block;
+      box-sizing: border-box;
+      background-color: white;
+      border-bottom: 1px solid white;
+
+      a {
+        display: block;
+        box-sizing: border-box;
+        height: 2.5em;
+        color: #656565;
+
+      }
+    }
+
+    li:last-of-type {
+      border-right: 1px solid #DADBD6;
+    }
+  }
 }
 
 .item-detail {
