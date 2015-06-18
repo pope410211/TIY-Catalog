@@ -67,19 +67,22 @@ body {
     }
 }
 .favorite-shop {
-    background-color: #f0f1f1;
-    border: 1px solid #dcd9d5;
-    border-radius: 2.5px;
-    font-size: 1.5ex;
-    font-weight: 400;
-    color: #726b67;
-    line-height: 3ex;
-    span {
-        padding-right: 1ex;
-    }
+  background-color: #f0f1f1;
+  border: 1px solid #dcd9d5;
+  border-radius: 2.5px;
+  font-size: 1.5ex;
+  font-weight: 400;
+  color: #726b67;
+  line-height: 3ex;
 }
-button:hover {
-    background-color: white;
+
+.favorite-shop:before {
+  content: "\2764";
+  padding-right: .5ex;
+}
+
+.favorite-shop:hover {
+  background-color: white;
 }
 
 .main-body {
@@ -88,6 +91,50 @@ button:hover {
   padding: 1.5em;
   border-radius: 5px;
   border: 1px solid #ECECEC;
+
+  .header-block {
+    background-color: #E5F4F7;
+    width: 90%;
+    height: 4em;
+    border-radius: 4px;
+
+    button {
+      @extend .favorite-shop;
+      vertical-align: top;
+      margin-left: 1em;
+      margin-top: 2.75ex;
+    }
+
+    button:hover {
+      background-color: #EBEBEA;
+    }
+
+    .favorite-text {
+      display: inline-block;
+      padding-top: 1ex;
+      margin-left: 1em;
+
+      big {
+        font-size: 2ex;
+        font-weight: bold;
+      }
+
+      small {
+        color: #666674;
+      }
+    }
+  }
+
+  .main-image {
+    width: 90%;
+    margin-top: 1em;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  
 }
 
 .item-detail {
