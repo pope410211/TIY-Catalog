@@ -33,6 +33,11 @@ $unit: ($grid-width / 12);
     width: $unit * 4;
   }
 
+  .unit-span-5 {
+    @extend .unit-1;
+    width: $unit * 5;
+  }
+
   .unit-span-6 {
     @extend .unit-1;
     width: $unit * 6;
