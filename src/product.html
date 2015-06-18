@@ -35,8 +35,12 @@
       </header> <!--.header-row grid-->
       <div class="main-body grid">
         <section class="left-column">
-          <div class="unit-span-8">
-            <img src=http://lorempixel.com/570/570>
+          <div class="unit-span-8" id="imageContainer">
+            <map name ="halfImage">
+              <area id="firstHalf" shape="square" coords="0,0,285,570" href="#fail" />
+              <area id="secondHalf" shape="square" coords="285,0,570,570" href="#fail2"/>
+            </map>
+            <img usemap="#halfImage" src='http://lorempixel.com/570/570'>
           </div>
         </section> <!-- .left-column -->
         <aside class="right-column">
