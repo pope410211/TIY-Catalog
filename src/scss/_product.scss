@@ -1,100 +1,132 @@
 body {
-  background-color: #F8F8F5;
+    background-color: #f8f8f5;
+}
+.header-row {
+    margin-top: 2.5em;
+    .shop-icon {
+        display: inline-block;
+        .img-box {
+            display: inline-block;
+            width: 75px;
+            height: 75px;
+            img {
+                height: auto;
+                width: auto;
+            }
+        }
+        .shop-name-fav {
+            display: inline-block;
+            padding-left: 1ex;
+            h4 {
+                margin: 0;
+                line-height: 2ex;
+                a {
+                    text-decoration: none;
+                    font-family: serif;
+                    font-size: 2.75ex;
+                    color: black;
+                }
+            }
+        }
+    }
+    .image-list {
+        text-align: right;
+        .img-box {
+            display: inline-block;
+            width: 75px;
+            height: 75px;
+            margin: 0 1ex;
+            text-align: center;
+            border: 0.5ex solid white;
+            vertical-align: top;
+            img {
+                width: auto;
+                height: auto;
+            }
+            a {
+                display: block;
+                text-decoration: none;
+                color: black;
+                box-sizing: border-box;
+                height: 75px;
+                background-color: white;
+                .item-count {
+                    display: block;
+                    font-size: 2.25ex;
+                    color: #0192b5;
+                    padding-top: 1ex;
+                }
+                span {
+                    font-size: 1.5ex;
+                }
+            }
+            a:hover {
+                background-color: #cce9f0;
+            }
+        }
+    }
+}
+.favorite-shop {
+    background-color: #f0f1f1;
+    border: 1px solid #dcd9d5;
+    border-radius: 2.5px;
+    font-size: 1.5ex;
+    font-weight: 400;
+    color: #726b67;
+    line-height: 3ex;
+    span {
+        padding-right: 1ex;
+    }
+}
+button:hover {
+    background-color: white;
 }
 
-.header-row {
-  margin-top: 2.5em;
-
-  .shop-icon {
-    display: inline-block;
-
-    .img-box {
-      display: inline-block;
-      width: 75px;
-      height: 75px;
-
-      img {
-        height: auto;
-        width: auto;
-      }
-    }
-
-    .shop-name-fav {
-    display: inline-block;
-    padding-left: 1ex;
-
-      h4 {
-        margin: 0;
-        line-height: 2ex;
-        a {
-          text-decoration: none;
-          font-family: serif;
-          font-size: 2.75ex;
-          color: black;
-        }
-      }
-    }
-  }
-
-  .image-list {
-    text-align: right;
-
-    .img-box {
-      display: inline-block;
-      width: 75px;
-      height: 75px;
-      margin: 0 1ex;
+.shop-images {
+    width: 100%;
+    border: 1ex solid lightblue;
+    border-radius: 5px;
+    margin-top: 2em;
+    background-color: white;
+    .seller-info{
       text-align: center;
-      border: .5ex solid white;
-      vertical-align: top;
-
+      margin-top: 1em;
+      font-family: serif;
+      font-size: 2.5ex;
       img {
-        width: auto;
-        height: auto;
+          width: 3em;
+          height: 3em;
+          margin-bottom: 0.5em;
+      }
+      p {
+          margin: 0;
+          color: lightgrey;
+          font-size: 2ex;
       }
 
-      a {
-        display: block;
+    }
+    .column {
+        display: inline-block;
+        font-size: 10px;
+        border: 1px solid lightgrey;
+        border-radius: 2%;
+        margin: 1em;
+
+    }
+    img {
+        width: 5em;
+        height: 5em;
+    }
+    h4 {
+        margin: 0;
+    }
+    a {
         text-decoration: none;
         color: black;
-        box-sizing: border-box;
-        height: 75px;
-        background-color: white;
-
-
-        .item-count {
-          display: block;
-          font-size: 2.25ex;
-          color: #0192B5;
-          padding-top: 1ex;
-        }
-
-        span {
-          font-size: 1.5ex;
-        }
-      }
-
-      a:hover {
-        background-color: #CCE9F0;
-      }
     }
-  }
-}
-
-.favorite-shop {
-  background-color: #F0F1F1;
-  border: 1px solid #DCD9D5;
-  border-radius: 2.5px;
-  font-size: 1.5ex;
-  font-weight: 400;
-  color: #726B67;
-  line-height: 3ex;
-
-  span {
-    padding-right: 1ex;
-  }
-}
-
-button:hover {
-  background-color: white;
+    .column .price {
+        margin: 0;
+        color: green;
+        float: left;
+    }
 }
