@@ -1,0 +1,302 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css" />
+    <!-- endbower -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="unit-span-4">
+            <h5>Show results for:</h5>
+            <aside class="leftBox" id="categorySelector">
+                <h5><a href="#">All categories</a></h5>
+                <ul>
+                    <li class="listPadding"><a href="#">Jewelry</a></li>
+                    <li class="listPadding"><a href="#">Craft Supplies &amp; Tools</a></li>
+                    <li class="listPadding"><a href="#">Home &amp; Living</a></li>
+                    <li class="listPadding"><a href="#">Art &amp; Collectibles</a></li>
+                    <li class="listPadding"><a href="#">Accessories</a></li>
+                    <li class="listPadding"><a href="#">Clothing</a></li>
+                    <li class="listPadding"><a href="#">Paper &amp; Party Supplies</a></li>
+                    <li class="listPadding"><a href="#">Bath &amp; Beauty</a></li>
+                    <li class="listPadding"><a href="#">Bags &amp; Purses</a></li>
+                    <li class="listPadding"><a href="#">Weddings</a></li>
+                    <li class="listPadding"><a href="#">Toys &amp; Games</a></li>
+                    <li class="listPadding"><a href="#">Books, Movies &amp; Music</a></li>
+                    <li class="listPadding"><a href="#">Electronics &amp; Accessories</a></li>
+                    <li class="listPadding"><a href="#">Pet Supplies</a></li>
+                    <li class="listPadding"><a href="#">Shoes</a></li>
+                </ul>
+            </aside>
+            <h5>Refine your Search</h5>
+            <aside class="leftBox" id="refineSearch">
+                <section id="itemType">
+                    <h5>Item Type</h5>
+                    <ul>
+                        <li>
+                            <input type="radio"> <a href="#">All Items</a></li>
+                        <li>
+                            <input type="radio"> <a href="#">Handmade</a></li>
+                        <li>
+                            <input type="radio"> <a href="#">Vintage</a></li>
+                    </ul>
+                </section>
+                <section id="price">
+                    <h5>Price</h5>
+                    <div class="currencyinput">
+                        <span>$
+                            <input type="text" placeholder="low">
+                        </span>
+                    </div>
+                    <span>to</span>
+                    <div class="currencyinput">
+                        <span>$
+                            <input type="text" placeholder="high">
+                        </span>
+                    </div>
+                    <button>&#9654;</button>
+                </section>
+                <section id="color">
+                    <h5>Filter by Color</h5>
+                    <div>
+                        <div class="color red"></div>
+                        <div class="color orange"></div>
+                        <div class="color yellow"></div>
+                        <div class="color green"></div>
+                        <div class="color blue"></div>
+                        <div class="color purple"></div>
+                        <div class="color black"></div>
+                        <div class="color"></div>
+                    </div>
+                </section>
+                <section id="orderOptions">
+                    <h5>Ordering Options</h5>
+                    <ul>
+                        <li>
+                            <input type="checkbox"> <a href="#">In Your Favorites</a></li>
+                        <li>
+                            <input type="checkbox"> <a href="#">Accepts Etsy Gift Cards</a></li>
+                        <li>
+                            <input type="checkbox"> <a href="#">Customizable</a></li>
+                    </ul>
+                </section>
+                <section id="shopLoc">
+                    <h5>Shop Location</h5>
+                    <ul>
+                        <li>
+                            <input type="radio"> <a href="#">Anywhere</a></li>
+                        <li>
+                            <input type="radio"> <a href="#">United States</a></li>
+                        <li>
+                            <a href="#">Choose a custom location</a></li>
+                    </ul>
+                </section>
+                <section id="shipTo">
+                    <h5>Ship To</h5>
+                    <select name="shipTo">
+                        <option value="value1">Value 1</option>
+                        <option value="value2">Value 2</option>
+                        <option value="value3">Value 3</option>
+                    </select>
+                </section>
+            </aside>
+        </div>
+    <div class="unit-span-8">
+        <section class="results">
+            <nav class="header-results">
+                <a href="#categories">
+                    <a>All Categories</a>
+                </a>
+                <a>(15,000,000 Results)</a>
+                <a class="sort">Sort by</a>
+                <select class="sort">
+                    <option>Most Recent</option>
+                    <option>Relevancy</option>
+                    <option>Lowest Price</option>
+                    <option>Highest Price</option>
+                </select>
+            </nav>
+
+
+
+            <section class="listings">
+                <div class="column">
+                    <a href="#listing">
+                        <img src="http://lorempixel.com/200/200/sports">
+                        <h4>Original Crap You Must Buy</h4>
+                    </a>
+                    <a href="#username">
+                        <p class="username">Username</p>
+                    </a>
+                    <p class="price">$10</p>
+                </div>
+                <div class="column">
+                    <a href="#listing">
+                        <img src="http://lorempixel.com/200/200/cats">
+                        <h4>Original Expensive Crap</h4>
+                    </a>
+                    <a href="#username">
+                        <p class="username">Username</p>
+                    </a>
+                    <p class="price">$100</p>
+                </div>
+                <div class="column">
+                    <a href="#listing">
+                        <img src="http://lorempixel.com/200/200/city">
+                        <h4>Original Overpriced Crap</h4>
+                    </a>
+                    <a href="#username">
+                        <p class="username">Username</p>
+                    </a>
+                    <p class="price">$1000</p>
+                </div>
+                <div class="column">
+                    <a href="#listing">
+                        <img src="http://lorempixel.com/200/200/sports">
+                        <h4>Original Crap You Must Buy</h4>
+                    </a>
+                    <a href="#username">
+                        <p class="username">Username</p>
+                    </a>
+                    <p class="price">$10</p>
+                </div>
+                <div class="column">
+                    <a href="#listing">
+                        <img src="http://lorempixel.com/200/200/cats">
+                        <h4>Original Expensive Crap</h4>
+                    </a>
+                    <a href="#username">
+                        <p class="username">Username</p>
+                    </a>
+                    <p class="price">$100</p>
+                </div>
+                <div class="column">
+                    <a href="#listing">
+                        <img src="http://lorempixel.com/200/200/city">
+                        <h4>Original Overpriced Crap</h4>
+                    </a>
+                    <a href="#username">
+                        <p class="username">Username</p>
+                    </a>
+                    <p class="price">$1000</p>
+                </div>
+                <div class="column">
+                    <a href="#listing">
+                        <img src="http://lorempixel.com/200/200/sports">
+                        <h4>Original Crap You Must Buy</h4>
+                    </a>
+                    <a href="#username">
+                        <p class="username">Username</p>
+                    </a>
+                    <p class="price">$10</p>
+                </div>
+                <div class="column">
+                    <a href="#listing">
+                        <img src="http://lorempixel.com/200/200/cats">
+                        <h4>Original Expensive Crap</h4>
+                    </a>
+                    <a href="#username">
+                        <p class="username">Username</p>
+                    </a>
+                    <p class="price">$100</p>
+                </div>
+                <div class="column">
+                    <a href="#listing">
+                        <img src="http://lorempixel.com/200/200/city">
+                        <h4>Original Overpriced Crap</h4>
+                    </a>
+                    <a href="#username">
+                        <p class="username">Username</p>
+                    </a>
+                    <p class="price">$1000</p>
+                </div>
+                <div class="column">
+                    <a href="#listing">
+                        <img src="http://lorempixel.com/200/200/sports">
+                        <h4>Original Crap You Must Buy</h4>
+                    </a>
+                    <a href="#username">
+                        <p class="username">Username</p>
+                    </a>
+                    <p class="price">$10</p>
+                </div>
+                <div class="column">
+                    <a href="#listing">
+                        <img src="http://lorempixel.com/200/200/cats">
+                        <h4>Original Expensive Crap</h4>
+                    </a>
+                    <a href="#username">
+                        <p class="username">Username</p>
+                    </a>
+                    <p class="price">$100</p>
+                </div>
+                <div class="column">
+                    <a href="#listing">
+                        <img src="http://lorempixel.com/200/200/city">
+                        <h4>Original Overpriced Crap</h4>
+                    </a>
+                    <a href="#username">
+                        <p class="username">Username</p>
+                    </a>
+                    <p class="price">$1000</p>
+                </div>
+            </section>
+
+            <section class="footer">
+                <div class="shop-suggestion">
+                    <a>Looking for shops?</a>
+                    <a href="#username1">JohnDoe</a>
+                    <a href="#username2">Batman</a>
+                    <a href="#username3">MarioBro</a>
+                    <a href="#seeMoreShops">See more</a>
+                </div>
+
+                <div class="pagination">
+                    <a class="previous-page">
+                        <span class=" ">
+                            <</span>
+                    </a>
+                    <a href="#page-1">1</a>
+                    <a href="#page-2">2</a>
+                    <a href="#page-3">3</a>
+                    <a href="#page-4">4</a>
+                    <a href="#page-5">5</a>
+                    <a href="#page-6">6</a>
+                    <a href="#page-7">7</a>
+                    <a href="#page-8">8</a>
+                    <a href="#pages">...</a>
+                    <a href="#page-250">250</a>
+                    <a class="next-page">
+                        <span class=" ">
+                            ></span>
+                    </a>
+
+                </div>
+            </section>
+        </section>
+    </div>
+  </div>
+    <!-- bower:js -->
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/lodash/lodash.js"></script>
+    <script src="../bower_components/vue/dist/vue.js"></script>
+    <!-- endbower -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
