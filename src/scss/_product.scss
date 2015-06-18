@@ -265,7 +265,7 @@ button:hover {
 }
 #firstHalf::after {
   content: "\21da";
-  background-color: rgba(255, 255, 128, 0.2);
+  background-color: rgba(0, 0, 255, 0.1);
   position: absolute;
   color: white;
   font-size: 39pt;
@@ -273,12 +273,12 @@ button:hover {
   width:1em;
 }
 #firstHalf:hover::after {
-  background-color: rgba(0, 0, 255, 0.5);
+  background-color: rgba(0, 0, 255, 0.4);
 }
 #secondHalf::after {
   content: "\21db";
   position: absolute;
-  background-color: rgba(255, 255, 128, 0.2);
+  background-color: rgba(0, 0, 255, 0.1);
   color: white;
   font-size: 39pt;
   top: 52%;
@@ -287,5 +287,5 @@ button:hover {
   text-align: right;
 }
 #secondHalf:hover::after {
-  background-color: rgba(0, 0, 255, 0.5);
+  background-color: rgba(0, 0, 255, 0.4);
 }
