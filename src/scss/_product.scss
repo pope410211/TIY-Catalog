@@ -141,6 +141,7 @@ body {
     padding-left: 0;
     text-align: center;
     margin-top: 2.5em;
+    margin-bottom: 2.5em;
 
     li {
       display: inline-block;
@@ -188,6 +189,14 @@ body {
     li:last-of-type {
       border-right: 1px solid #DADBD6;
     }
+  }
+  .product-summary {
+    width: 85%;
+    font-size: 1.75ex;
+    color: #5B5B5B;
+    text-align: left;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
   }
 }
 
