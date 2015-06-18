@@ -36,7 +36,11 @@
       <div class="main-body">
         <section class="grid">
           <div class="unit-span-8">
-            <img src=http://lorempixel.com/550/550>
+            <map name ="halfImage">
+              <area shape="square" coords="0,0,275,550" href="#fail" />
+              <area shape="square" coords="275,0,550,550" href="#fail2"/>
+            </map>
+            <img usemap="#halfImage" src='http://lorempixel.com/550/550'>
           </div>
           <div class="unit-span-4 item-detail">
             <div class="item-title">
