@@ -297,7 +297,11 @@ button:hover {
   margin-top: 3ex;
   padding: 1ex 1ex;
   border: 1ex solid #EFEFEB;
-  border-radius: 3px
+  border-radius: 3px;
+}
+#share-buttons {
+  background-color: #EFEFEB;
+  margin-bottom: -3ex;
 }
 #share-buttons img {
 width: 2em;
