@@ -128,6 +128,7 @@ body {
   .main-image {
     width: 90%;
     margin-top: 1em;
+    float: none;
 
     img {
       width: 100%;
@@ -376,4 +377,30 @@ body {
       color: green;
     }
   }
+}
+#firstHalf::after {
+  content: "\21da";
+  background-color: rgba(0, 0, 255, 0.1);
+  position: absolute;
+  color: white;
+  font-size: 39pt;
+  top: 75%;
+  width:1em;
+}
+#firstHalf:hover::after {
+  background-color: rgba(0, 0, 255, 0.4);
+}
+#secondHalf::after {
+  content: "\21db";
+  position: absolute;
+  background-color: rgba(0, 0, 255, 0.1);
+  color: white;
+  font-size: 39pt;
+  top: 75%;
+  left: 52.75%;
+  width:1em;
+  text-align: right;
+}
+#secondHalf:hover::after {
+  background-color: rgba(0, 0, 255, 0.4);
 }
