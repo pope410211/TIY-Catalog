@@ -404,3 +404,19 @@ body {
 #secondHalf:hover::after {
   background-color: rgba(0, 0, 255, 0.4);
 }
+.taxonomy {
+  margin: 2em;
+
+  button {
+    margin-top: 1em;
+    margin-right: 0.5em;
+    border-radius: 0.5ex;
+    background-color: white;
+    color: #0192b5;
+    font-size: 14px;
+    border: 1px solid darkgrey;
+  }
+  button:hover {
+    background-color: #ADDCE7;
+  }
+}
