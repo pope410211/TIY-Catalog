@@ -301,7 +301,12 @@ button:hover {
 }
 #share-buttons {
   background-color: #EFEFEB;
-  margin-bottom: -3ex;
+  margin-bottom: 3ex;
+  float: right;
+}
+#shop {
+  float:right;
+  clear: right;
 }
 #share-buttons img {
 width: 2em;
