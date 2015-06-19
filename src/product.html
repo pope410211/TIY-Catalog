@@ -1,21 +1,23 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- bower:css -->
-        <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css" />
-        <!-- endbower -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    </head>
-    <body>
-      <header class="header-row grid">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css" />
+    <!-- endbower -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <header class="header-row grid">
         <div class="shop-icon unit-span-4">
           <div class="img-box">
             <a href="#"><img src="http://lorempixel.com/75/75/people" id="storepic"></a>
@@ -64,7 +66,7 @@
         <aside class="right-column">
           <div class="unit-span-4 item-detail">
             <div class="item-title">
-              <p id="productinfo">{{Product Title-Info}}</p>
+              <p id="productinfo">{{product.title}}</p>
             </div> <!--.item-title-->
             <div class="price-questions">
               <div class="price-listing"><span>$</span><span id="cost">{{46.00}}</span><span class="currency" ><a href="#" id="money">{{USD}}</a></span></div>
@@ -173,6 +175,7 @@
     <script src="../bower_components/vue/dist/vue.js"></script>
     <!-- endbower -->
     <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+    <script src="js/main.js"></script>
+</body>
+
 </html>
