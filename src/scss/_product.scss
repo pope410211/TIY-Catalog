@@ -404,3 +404,25 @@ body {
 #secondHalf:hover::after {
   background-color: rgba(0, 0, 255, 0.4);
 }
+#buttonsSection {
+  margin-top: 3ex;
+  padding: 1ex 1ex;
+  border: 1ex solid #EFEFEB;
+  border-radius: 3px;
+}
+#share-buttons {
+  background-color: #EFEFEB;
+  margin-bottom: 3ex;
+  float: right;
+}
+#shop {
+  float:right;
+  clear: right;
+}
+#share-buttons img {
+width: 2em;
+padding: 5px;
+border: 0;
+box-shadow: 0;
+display: inline;
+}
