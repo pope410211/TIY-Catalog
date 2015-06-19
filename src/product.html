@@ -63,6 +63,7 @@
             </select> <!--.color-->
             <h5 class="overview-heading">Overview</h5>
             <ul class="overview-bullets">
+              <li v-repeat="baseInfo">{{ body.info }}</li>
               <li>Made by hipsters, for hipsters</li>
               <li>Not by hand</li>
               <li>Turns heads at the coffee shop</li>
@@ -141,7 +142,7 @@
               </div>
             </section><!--.shop-images-->
           </aside><!--.right-column-->
-      
+
       </div class="main-body">
     <!-- bower:js -->
     <script src="../bower_components/modernizr/modernizr.js"></script>
