@@ -1,6 +1,6 @@
 //
 //
-// $.getJSON('../../api/etsy/total-listing.json')
+// $.getJSON('../../api/etsy/listing-all.json')
 // .then(function(totalList){
 //   console.log(totalList);
 //   console.log('its a live');
