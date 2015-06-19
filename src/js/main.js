@@ -24,7 +24,11 @@ $.getJSON('../../api/etsy/listing-all.json')
 
 $.getJSON('../../api/etsy/shop.json')
 .then(function(shopList){
-  console.log()
+  console.log(shopList);
+  console.log('Hello...')
+
+  $storeTitle = $('#storename');
+  $storeTitle.text(shopList.results[0].shop_name);
 
 });
 
