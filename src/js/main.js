@@ -21,3 +21,25 @@ $.getJSON('../../api/etsy/total-listing.json')
   $productCurrency.text(totalList.results[0].currency_code)
 
 });
+
+new Vue ({
+
+  el: ".right-column",
+
+  data [
+    {
+
+    }
+  ],
+
+  methods: {
+    getJSON: function(get){
+
+      this.get = '../../api/etsy/listing-variations'
+    }
+
+  },
+
+
+
+});
