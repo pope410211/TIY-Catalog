@@ -47,18 +47,22 @@ $.getJSON('../../api/etsy/shopss.json')
 
 $.getJSON('../../api/etsy/listing-all.json')
 .then(function(shopItems){
+  var colors = new Vue({
+    el: '#colorOptions',
+    data: {
+      title: colorOptions,
+      colorOptions: shopItems.results[0].Variations[0].options
+    }
+  })
 
-  $storeItem = $('#itempic1');
-  $storeItem.attr('src', shopItems.results[0].Images[0].url_75x75);
-
-  $storeItem = $('#itempic2');
-  $storeItem.attr('src', shopItems.results[0].Images[1].url_75x75);
-
-  $storeItem = $('#itempic3');
-  $storeItem.attr('src', shopItems.results[0].Images[2].url_75x75);
-
-  $storeItem = $('#itempic4');
-  $storeItem.attr('src', shopItems.results[0].Images[3].url_75x75);
+  var countries = new Vue({
+    el: '#itempic1',
+    data: {
+      title: 'shopItems',
+      shopItems: shopItems.results[0].Images.slice(0, 4)
+    }
+  });
+});
 
   $.getJSON('../../api/etsy/countries.json')
   .then(function(countries){
@@ -131,7 +135,6 @@ $.getJSON('../../api/etsy/listing-all.json')
       }
     });
   });
-});
 
   $('li', '.tab-row').click(function(event){
       event.preventDefault();
