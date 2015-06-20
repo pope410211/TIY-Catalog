@@ -1,4 +1,4 @@
-(function(window){
+  (function(window){
 
   //CATEGORY PAGE JAVASCRIPT
   var $pages = $('.pagination a');
@@ -130,6 +130,8 @@ $.getJSON('../../api/etsy/listing-all.json')
         countries: countries.results
       }
     });
+  });
+});
 
   $('li', '.tab-row').click(function(event){
       event.preventDefault();
