@@ -46,6 +46,13 @@ $.getJSON('../../api/etsy/shopss.json')
 
 $.getJSON('../../api/etsy/listing-all.json')
 .then(function(shopItems){
+  var colors = new Vue({
+    el: '#colorOptions',
+    data: {
+      title: colorOptions,
+      colorOptions: shopItems.results[0].Variations[0].options
+    }
+  })
 
   var countries = new Vue({
     el: '#itempic1',

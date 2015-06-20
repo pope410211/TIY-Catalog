@@ -110,10 +110,9 @@
               <option value="4">4</option>
             </select> <!--.quantity-->
             <h5>Color</h5>
-            <select name="color">
+            <select id="colorOptions" name="color">
               <option value="">Select a color</option>
-              <option value="hipster-gray">Hipster gray hooray</option>
-              <option value="somber-black-tears">Somber black tears</option>
+              <option v-repeat="colorOptions" value="hipster-gray">{{value}}</option>
             </select> <!--.color-->
             <h5 class="overview-heading">Overview</h5>
             <ul class="overview-bullets">
