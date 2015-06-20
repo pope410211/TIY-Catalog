@@ -79,15 +79,19 @@ body {
         }
     }
     #categorySelector {
-        h5 {
-            margin: 0;
-            padding-bottom: 1ex;
-            a {
-                color: black;
-            }
+        ul {
+          padding: 0;
         }
-        .listPadding {
+        li {
+            padding-left: 1em;
             padding-bottom: 1ex;
+        }
+        #header {
+          padding-left: 0;
+        }
+        .activeCat {
+          color: black;
+          font-weight: bold;
         }
     }
     #refineSearch {
