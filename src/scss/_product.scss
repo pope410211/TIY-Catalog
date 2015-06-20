@@ -159,12 +159,11 @@ body {
         padding: 1.25ex 2ex 0 2ex;
         text-decoration: none;
         color: #0292B5;
-      }
 
-      .review-rating:before {
-        content: "\2605";
-        color: #FFDC1E;
-        padding-right: .5ex;
+        span {
+          color: #FFDC1E;
+          padding-right: .5ex;
+        }
       }
 
       a:hover {
@@ -191,13 +190,70 @@ body {
       border-right: 1px solid #DADBD6;
     }
   }
-  .product-summary {
+  #product-summary {
     width: 85%;
     font-size: 1.75ex;
     color: #5B5B5B;
     text-align: left;
     margin-left: 2.5%;
     margin-right: 2.5%;
+  }
+
+  #product-reviews {
+    display: none;
+    width: 90%;
+
+    aside {
+      display: inline-block;
+      width: 24.5%;
+      text-align: center;
+      vertical-align: top;
+    }
+
+    figure {
+      display: inline-block;
+      width: 74%;
+      margin: 0;
+      font-size: 1.75ex;
+      color: #5B5B5B;
+
+      h5 {
+        margin-top: 0;
+        margin-bottom: 1ex;
+
+        span {
+          @extend .clearfix;
+          float: right;
+          font-weight: lighter;
+        }
+      }
+
+      .translate {
+        display: inline;
+      }
+
+      .translate:after {
+        content: "\25bc";
+        padding-left: .75ex;
+      }
+
+      .reviewed-item {
+
+        img{
+          vertical-align: baseline;
+          padding-right: 1ex;
+        }
+
+        h5 {
+          display: inline-block;
+          width: 75%;
+        }
+      }
+    }
+  }
+
+  #shipping-policies {
+    display: none;
   }
 }
 
