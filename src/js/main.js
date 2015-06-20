@@ -1,4 +1,4 @@
-(function(window){
+  (function(window){
 
   //CATEGORY PAGE JAVASCRIPT
   var $pages = $('.pagination a');
