@@ -26,29 +26,14 @@
           <div class="shop-name-fav">
 
             <h4><a href="#" id="storename">{{store_name}}</a></h4>
-            <button class="favorite-shop"><span>&#10084;</span>Favorite Shop</button>
+            <button class="favorite-shop">Favorite Shop</button>
           </div>
         </div> <!--.shop-icon-->
 
         <div class="image-list unit-span-8">
-            <div class="img-box">
+            <div v-repeat="shopItems" class="img-box" id="itempic1">
                 <a href="#">
-                    <img src={{url_75x75}} id="itempic1">
-                </a>
-            </div>
-            <div class="img-box">
-                <a href="#">
-                    <img src={{url_75x75}} id="itempic2">
-                </a>
-            </div>
-            <div class="img-box">
-                <a href="#">
-                      <img src={{url_75x75}} id="itempic3">
-                </a>
-            </div>
-            <div class="img-box">
-                <a href="#">
-                      <img src={{url_75x75}} id="itempic4">
+                    <img src={{url_75x75}}>
                 </a>
             </div>
             <div class="img-box">

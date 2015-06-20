@@ -47,17 +47,13 @@ $.getJSON('../../api/etsy/shopss.json')
 $.getJSON('../../api/etsy/listing-all.json')
 .then(function(shopItems){
 
-  $storeItem = $('#itempic1');
-  $storeItem.attr('src', shopItems.results[0].Images[0].url_75x75);
-
-  $storeItem = $('#itempic2');
-  $storeItem.attr('src', shopItems.results[0].Images[1].url_75x75);
-
-  $storeItem = $('#itempic3');
-  $storeItem.attr('src', shopItems.results[0].Images[2].url_75x75);
-
-  $storeItem = $('#itempic4');
-  $storeItem.attr('src', shopItems.results[0].Images[3].url_75x75);
+  var countries = new Vue({
+    el: '#itempic1',
+    data: {
+      title: 'shopItems',
+      shopItems: shopItems.results[0].Images.slice(0, 4)
+    }
+  });
 
 });
 
