@@ -1,39 +1,67 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- bower:css -->
-        <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css" />
-        <!-- endbower -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    </head>
-    <body>
-      <header class="header-row grid">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css" />
+    <!-- endbower -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <header class="header-row grid">
         <div class="shop-icon unit-span-4">
+
           <div class="img-box">
-            <a href="#"><img src="http://lorempixel.com/75/75/people"></a>
+            <a href="#"><img src="http://lorempixel.com/75/75/people" id="storepic"></a>
           </div> <!--.img-box-->
           <div class="shop-name-fav">
-            <h4><a href="#">mediumcontrol</a></h4>
-            <button class="favorite-shop"><span>Favorite Shop</span></button>
+
+            <h4><a href="#" id="storename">{{store Name}}</a></h4>
+            <button class="favorite-shop"><span>&#10084;</span>Favorite Shop</button>
           </div>
         </div> <!--.shop-icon-->
+
         <div class="image-list unit-span-8">
-          <div class="img-box"><a href="#"><img src="http://lorempixel.com/75/75/people"></a></div>
-          <div class="img-box"><a href="#"><img src="http://lorempixel.com/75/75/people"></a></div>
-          <div class="img-box"><a href="#"><img src="http://lorempixel.com/75/75/people"></a></div>
-          <div class="img-box"><a href="#"><img src="http://lorempixel.com/75/75/people"></a></div>
-          <div class="img-box"><a href="#"><span class="item-count">733</span><span>items</span></a></div>
-        </div> <!--.image-list unit-span-8-->
-      </header> <!--.header-row grid-->
-      <div class="main-body grid">
+            <div class="img-box">
+                <a href="#">
+                    <img src="http://lorempixel.com/75/75/people">
+                </a>
+            </div>
+            <div class="img-box">
+                <a href="#">
+                    <img src="http://lorempixel.com/75/75/people">
+                </a>
+            </div>
+            <div class="img-box">
+                <a href="#">
+                    <img src="http://lorempixel.com/75/75/people">
+                </a>
+            </div>
+            <div class="img-box">
+                <a href="#">
+                    <img src="http://lorempixel.com/75/75/people">
+                </a>
+            </div>
+            <div class="img-box">
+                <a href="#">
+                    <span class="item-count">733</span>
+                    <span>items</span>
+                </a>
+            </div>
+        </div>
+        <!--.image-list unit-span-8-->
+    </header>
+    <!--.header-row grid-->
+    <div class="main-body grid">
         <section class="left-column unit-span-8">
           <div class="header-block">
             <button><span>Favorite</span></button>
@@ -83,10 +111,10 @@
         <aside class="right-column">
           <div class="unit-span-4 item-detail">
             <div class="item-title">
-              <p>Backpack: shit, hipster, awesome, OMG, wow, I like craft beer, hipster bags, coffee, music snobs and skinny jeans.Where's the kale?</p>
+              <p id="productinfo">{{product.title}}</p>
             </div> <!--.item-title-->
             <div class="price-questions">
-              <div class="price-listing"><span>$</span>46.00<span class="currency"><a href="#">USD</a></span></div>
+              <div class="price-listing"><span>$</span><span id="cost">{{46.00}}</span><span class="currency" ><a href="#" id="money">{{USD}}</a></span></div>
               <button class="seller-questions">Ask a Question</button>
             </div> <!--.price-questions-->
             <h5>Quantity</h5>
@@ -104,6 +132,7 @@
             </select> <!--.color-->
             <h5 class="overview-heading">Overview</h5>
             <ul class="overview-bullets">
+              <li v-repeat="baseInfo">{{ body.info }}</li>
               <li>Made by hipsters, for hipsters</li>
               <li>Not by hand</li>
               <li>Turns heads at the coffee shop</li>
@@ -182,7 +211,46 @@
               </div>
             </section><!--.shop-images-->
           </aside><!--.right-column-->
+
       </div class="main-body">
+
+      <section class="grid">
+          <div class="taxonomy">
+              <strong>Related to this Item</strong>
+              <br>
+              <button>
+                  <span>Beer</span>
+              </button>
+              <button>
+                  <span>Magic</span>
+              </button>
+              <button>
+                  <span>Sorcery</span>
+              </button>
+              <button>
+                  <span>Weird Stuff</span>
+              </button>
+              <button>
+                  <span>Cool Stuff</span>
+              </button>
+              <button>
+                  <span>Spatulas</span>
+              </button>
+              <button>
+                  <span>Stuff</span>
+              </button>
+              <button>
+                  <span>Liquor</span>
+              </button>
+              <button>
+                  <span>Fighting</span>
+              </button>
+              <button>
+                  <span>Video Games</span>
+              </button>
+          </div>
+      </section>
+
     <!-- bower:js -->
     <script src="../bower_components/modernizr/modernizr.js"></script>
     <script src="../bower_components/jquery/dist/jquery.js"></script>
@@ -190,6 +258,7 @@
     <script src="../bower_components/vue/dist/vue.js"></script>
     <!-- endbower -->
     <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+    <script src="js/main.js"></script>
+</body>
+
 </html>
