@@ -59,6 +59,7 @@ $.getJSON('../../api/etsy/listing-all.json')
 
   $storeItem = $('#itempic4');
   $storeItem.attr('src', shopItems.results[0].Images[3].url_75x75);
+});
 
   $.getJSON('../../api/etsy/countries.json')
   .then(function(countries){
@@ -130,6 +131,7 @@ $.getJSON('../../api/etsy/listing-all.json')
         countries: countries.results
       }
     });
+  });
 
   $('li', '.tab-row').click(function(event){
       event.preventDefault();
