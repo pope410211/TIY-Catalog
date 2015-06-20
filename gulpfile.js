@@ -7,11 +7,13 @@ var browserSync = require('browser-sync').create();
 // // Static Server + watching scss/html files
 gulp.task('serve', ['sass'], function() {
  browserSync.init({
-     server: "src/",
-     directory: true,
-     routes: {
-       "/bower_components": "bower_components"
-     }
+     server: {
+       baseDir: "src/",
+       routes: {
+         "/bower_components": "./bower_components"
+       }
+     },
+     directory: true
  });
 
  gulp.watch("src/scss/*.scss", ['sass']);
