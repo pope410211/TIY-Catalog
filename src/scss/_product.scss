@@ -191,17 +191,24 @@ body {
     }
   }
   #product-summary {
+    display: none;
     width: 85%;
     font-size: 1.75ex;
     color: #5B5B5B;
     text-align: left;
     margin-left: 2.5%;
     margin-right: 2.5%;
+    &.panel-current {
+      display: block;
+    }
   }
 
   #product-reviews {
     display: none;
     width: 90%;
+    &.panel-current {
+      display: block;
+    }
 
     aside {
       display: inline-block;
@@ -235,6 +242,7 @@ body {
       .translate:after {
         content: "\25bc";
         padding-left: .75ex;
+        cursor: pointer;
       }
 
       .reviewed-item {
@@ -254,6 +262,9 @@ body {
 
   #shipping-policies {
     display: none;
+    &.panel-current {
+      display: block;
+    }
   }
 }
 
