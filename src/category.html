@@ -106,9 +106,27 @@
                 <section id="shipTo">
                     <h5>Ship To</h5>
                     <select name="shipTo">
-                        <option value="value1">Value 1</option>
-                        <option value="value2">Value 2</option>
-                        <option value="value3">Value 3</option>
+                        <option value="chooseCountry">Choose a country...</option>
+                        <optgroup label="--------">
+                          <option id="c1" value={{country_id1}}>{{name}}</option>
+                          <option id="c2" value={{country_id2}}>{{name}}</option>
+                          <option id="c3" value={{country_id3}}>{{name}}</option>
+                          <option id="c4" value={{country_id4}}>{{name}}</option>
+                          <option id="c5" value={{country_id5}}>{{name}}</option>
+                          <option id="c6" value={{country_id6}}>{{name}}</option>
+                          <option id="c7" value={{country_id7}}>{{name}}</option>
+                          <option id="c8" value={{country_id8}}>{{name}}</option>
+                          <option id="c9" value={{country_id9}}>{{name}}</option>
+                          <option id="c10" value={{country_id10}}>{{name}}</option>
+                          <option id="c11" value={{country_id11}}>{{name}}</option>
+                          <option id="c12" value={{country_id12}}>{{name}}</option>
+                          <option id="c13" value={{country_id13}}>{{name}}</option>
+                          <option id="c14" value={{country_id14}}>{{name}}</option>
+                          <option id="c15" value={{country_id15}}>{{name}}</option>
+                        </optgroup>
+                        <optgroup label="--------">
+                          <option id="fullList" v-repeat="countries" value={{country_id}}>{{name}}</option>
+                        </optgroup>
                     </select>
                 </section>
             </aside>

@@ -7,6 +7,7 @@ var browserSync = require('browser-sync').create();
 // // Static Server + watching scss/html files
 gulp.task('serve', ['sass'], function() {
  browserSync.init({
+
      // Convert `server: "src/"` to...
      server: {
        baseDir: "src/",
@@ -19,6 +20,7 @@ gulp.task('serve', ['sass'], function() {
        }
      },
      directory: true,
+
  });
 
  gulp.watch("src/scss/*.scss", ['sass']);
