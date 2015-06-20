@@ -1,0 +1,83 @@
+$grid-width: 100%;
+$unit: ($grid-width / 12);
+
+.grid {
+  @extend .clearfix;
+  width: $grid-width;
+  max-width: 80%;
+  /* background-color: lightgray; */
+  /* outline: 1px solid black; */
+  margin: 0 auto;
+
+  .unit-1 {
+    width: $unit;
+    float: left;
+    /* background-color: lightgreen; */
+    /* outline: 1px solid darkgray; */
+    padding: 0 1ex;
+    box-sizing: border-box;
+  }
+
+  .unit-span-2 {
+    @extend .unit-1;
+    width: $unit * 2;
+  }
+
+  .unit-span-3 {
+    @extend .unit-1;
+    width: $unit * 3;
+  }
+
+  .unit-span-4 {
+    @extend .unit-1;
+    width: $unit * 4;
+  }
+
+  .unit-span-5 {
+    @extend .unit-1;
+    width: $unit * 5;
+  }
+
+  .unit-span-6 {
+    @extend .unit-1;
+    width: $unit * 6;
+  }
+
+  .unit-span-8 {
+    @extend .unit-1;
+    width: $unit * 8;
+  }
+
+  .unit-span-10 {
+    @extend .unit-1;
+    width: $unit * 10;
+  }
+
+  .offset-1 {
+    margin-left: $unit;
+  }
+
+  .offset-2 {
+    margin-left: $unit * 2;
+  }
+
+  .offset-3 {
+    margin-left: $unit * 3;
+  }
+
+  .offset-4 {
+    margin-left: $unit * 4;
+  }
+
+  .offset-6 {
+    margin-left: $unit * 6;
+  }
+
+  .offset-8 {
+    margin-left: $unit * 8;
+  }
+
+  .offset-10 {
+    margin-left: $unit * 10;
+  }
+}
