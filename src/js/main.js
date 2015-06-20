@@ -1,4 +1,11 @@
+//CATEGORY PAGE JAVASCRIPT
+var $pages = $('.pagination a');
+$pages.click(function() {
+  $pages.removeClass('active');
+  $(this).addClass('active');
+});
 
+//END CATEGORY PAGE JAVASCRIPT
 
 $.getJSON('../../api/etsy/listing-all.json')
 .then(function(totalList){
