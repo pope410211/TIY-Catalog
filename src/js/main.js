@@ -166,10 +166,32 @@ $.getJSON('../../api/etsy/listing-all.json')
       new Vue ({
         el: '.main-image',
         data: {
-          'listing': mainImageStuff(mainImage.results[0].Images[0])
+        'listing': mainImageStuff(mainImage.results[0].Images[0])
         }
       });
+    });
 
+  $.getJSON('../../api/etsy/shoplistingimages.json')
+    .then(function(response){
+
+      var indexZero = [ ];
+      for (i = 0; i < response.results.length; i++) {
+        indexZero.push(response.results[i].Images[0]);
+      };
+      console.log(indexZero);
+
+      function shopItemImages(data){
+        return {
+          url_75x75: data.url_75x75
+        }
+      };
+
+      new Vue ({
+        el: '.shop-images',
+        data: {
+          'items': shopItemImages(indexZero[0])
+        }
+      });
     });
 
   $('.product-images')
