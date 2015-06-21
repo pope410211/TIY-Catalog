@@ -150,127 +150,17 @@
 
 
 
-            <section class="listings">
-                <div class="column">
-                    <a href="#listing">
-                        <img src="http://lorempixel.com/200/200/sports">
-                        <h4>Original Crap You Must Buy</h4>
-                    </a>
-                    <a href="#username">
-                        <p class="username">Username</p>
-                    </a>
-                    <p class="price">$10</p>
-                </div>
-                <div class="column">
-                    <a href="#listing">
-                        <img src="http://lorempixel.com/200/200/cats">
-                        <h4>Original Expensive Crap</h4>
-                    </a>
-                    <a href="#username">
-                        <p class="username">Username</p>
-                    </a>
-                    <p class="price">$100</p>
-                </div>
-                <div class="column">
-                    <a href="#listing">
-                        <img src="http://lorempixel.com/200/200/city">
-                        <h4>Original Overpriced Crap</h4>
-                    </a>
-                    <a href="#username">
-                        <p class="username">Username</p>
-                    </a>
-                    <p class="price">$1000</p>
-                </div>
-                <div class="column">
-                    <a href="#listing">
-                        <img src="http://lorempixel.com/200/200/sports">
-                        <h4>Original Crap You Must Buy</h4>
-                    </a>
-                    <a href="#username">
-                        <p class="username">Username</p>
-                    </a>
-                    <p class="price">$10</p>
-                </div>
-                <div class="column">
-                    <a href="#listing">
-                        <img src="http://lorempixel.com/200/200/cats">
-                        <h4>Original Expensive Crap</h4>
-                    </a>
-                    <a href="#username">
-                        <p class="username">Username</p>
-                    </a>
-                    <p class="price">$100</p>
-                </div>
-                <div class="column">
-                    <a href="#listing">
-                        <img src="http://lorempixel.com/200/200/city">
-                        <h4>Original Overpriced Crap</h4>
-                    </a>
-                    <a href="#username">
-                        <p class="username">Username</p>
-                    </a>
-                    <p class="price">$1000</p>
-                </div>
-                <div class="column">
-                    <a href="#listing">
-                        <img src="http://lorempixel.com/200/200/sports">
-                        <h4>Original Crap You Must Buy</h4>
-                    </a>
-                    <a href="#username">
-                        <p class="username">Username</p>
-                    </a>
-                    <p class="price">$10</p>
-                </div>
-                <div class="column">
-                    <a href="#listing">
-                        <img src="http://lorempixel.com/200/200/cats">
-                        <h4>Original Expensive Crap</h4>
-                    </a>
-                    <a href="#username">
-                        <p class="username">Username</p>
-                    </a>
-                    <p class="price">$100</p>
-                </div>
-                <div class="column">
-                    <a href="#listing">
-                        <img src="http://lorempixel.com/200/200/city">
-                        <h4>Original Overpriced Crap</h4>
-                    </a>
-                    <a href="#username">
-                        <p class="username">Username</p>
-                    </a>
-                    <p class="price">$1000</p>
-                </div>
-                <div class="column">
-                    <a href="#listing">
-                        <img src="http://lorempixel.com/200/200/sports">
-                        <h4>Original Crap You Must Buy</h4>
-                    </a>
-                    <a href="#username">
-                        <p class="username">Username</p>
-                    </a>
-                    <p class="price">$10</p>
-                </div>
-                <div class="column">
-                    <a href="#listing">
-                        <img src="http://lorempixel.com/200/200/cats">
-                        <h4>Original Expensive Crap</h4>
-                    </a>
-                    <a href="#username">
-                        <p class="username">Username</p>
-                    </a>
-                    <p class="price">$100</p>
-                </div>
-                <div class="column">
-                    <a href="#listing">
-                        <img src="http://lorempixel.com/200/200/city">
-                        <h4>Original Overpriced Crap</h4>
-                    </a>
-                    <a href="#username">
-                        <p class="username">Username</p>
-                    </a>
-                    <p class="price">$1000</p>
-                </div>
+            <section class="listings" id="listings">
+              <div v-repeat= "listings" class="column">
+                  <a href={{url}}>
+                      <img src={{url_75x75}}>
+                      <h4>{{title}}</h4>
+                  </a>
+                  <a href="{{url}}">
+                      <p class="username">{{shop_name}}</p>
+                  </a>
+                  <p class="price">{{price}}</p>
+              </div>
             </section>
 
             <section class="footer">

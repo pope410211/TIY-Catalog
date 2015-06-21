@@ -51,16 +51,27 @@ $.getJSON('../../api/etsy/shopss.json')
 
 });
 
+$.getJSON('../../api/etsy/listings.json')
+.then(function(listings){
+  var listings = new Vue({
+    el: '#listings',
+    data: {
+      title: 'listings',
+      listings: listings.results[0]
+    }
+  });
+});
+
 
 $.getJSON('../../api/etsy/listing-all.json')
 .then(function(shopItems){
   var colors = new Vue({
     el: '#colorOptions',
     data: {
-      title: colorOptions,
+      title: 'colorOptions',
       colorOptions: shopItems.results[0].Variations[0].options
     }
-  })
+  });
 
   var countries = new Vue({
     el: '#itempic1',
