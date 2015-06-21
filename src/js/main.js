@@ -144,6 +144,13 @@ $.getJSON('../../api/etsy/listing-all.json')
           'productImages': productPhotos.results[0].Images
         }
       });
+
+      new Vue ({
+        el: '#product-summary',
+        data: {
+          'listing': productPhotos.results[0]
+        }
+      });
   });
 
   $.getJSON('../../api/etsy/listing-all.json')
@@ -158,7 +165,7 @@ $.getJSON('../../api/etsy/listing-all.json')
       new Vue ({
         el: '.main-image',
         data: {
-        'listing': mainImageStuff(mainImage.results[0].Images[0])
+          'listing': mainImageStuff(mainImage.results[0].Images[0])
         }
       });
     });
