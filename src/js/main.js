@@ -42,6 +42,13 @@ $.getJSON('../../api/etsy/shopss.json')
   $itemCount = $('.item-count');
   $itemCount.text(shop.results[0].listing_active_count);
 
+  $storeTitle = $('#store-name');
+  $storeTitle.text(shop.results[0].shop_name);
+
+  $storePic = $('#avatar');
+  $storePic.attr('src', shop.results[3].image_url_75x75);
+
+
 });
 
 
