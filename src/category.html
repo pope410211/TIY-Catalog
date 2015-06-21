@@ -150,10 +150,10 @@
 
 
 
-            <section class="listings" id="listings">
-              <div v-repeat= "listings" class="column">
-                  <a href={{url}}>
-                      <img src={{url_75x75}}>
+            <section class="listings">
+              <div v-repeat="items" class="column" id="listings">
+                  <a  href={{url}}>
+                      <img src={{url_fullxfull}}>
                       <h4>{{title}}</h4>
                   </a>
                   <a href="{{url}}">
