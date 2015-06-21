@@ -136,6 +136,17 @@ $.getJSON('../../api/etsy/listing-all.json')
     });
   });
 
+  $.getJSON('../../api/etsy/listing-all.json')
+    .then(function(productPhotos){
+
+      new Vue ({
+        el: '.product-images',
+        data: {
+          'productImages': productPhotos.results[0].Images
+        }
+      });
+    });
+
   $('li', '.tab-row').click(function(event){
       event.preventDefault();
       $(this).addClass('active');

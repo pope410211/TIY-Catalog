@@ -135,6 +135,18 @@ body {
     }
   }
 
+  .image-row {
+    display: block;
+    width: 90%;
+    text-align: center;
+    margin-top: 1.5em;
+
+    img {
+      width: 30px;
+      display: inline-block;
+    }
+  }
+
   .tab-row {
     width: 90%;
     border-bottom: 1px solid #DADBD6;
