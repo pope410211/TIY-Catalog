@@ -61,14 +61,6 @@ $.getJSON('../../api/etsy/listing-all.json')
       colorOptions: shopItems.results[0].Variations[0].options
     }
   })
-
-  var countries = new Vue({
-    el: '#itempic1',
-    data: {
-      title: 'shopItems',
-      shopItems: shopItems.results[0].Images.slice(0, 4)
-    }
-  });
 });
 
   $.getJSON('../../api/etsy/countries.json')
@@ -166,10 +158,33 @@ $.getJSON('../../api/etsy/listing-all.json')
       new Vue ({
         el: '.main-image',
         data: {
-          'listing': mainImageStuff(mainImage.results[0].Images[0])
+        'listing': mainImageStuff(mainImage.results[0].Images[0])
+        }
+      });
+    });
+
+  $.getJSON('../../api/etsy/shoplistingimages.json')
+    .then(function(response){
+
+      var indexZero = [ ];
+      for (i = 0; i < response.results.length; i++) {
+        indexZero.push(response.results[i].Images[0]);
+      };
+      console.log(indexZero);
+
+      new Vue ({
+        el: '.shop-images',
+        data: {
+          'items': indexZero.slice(0,8)
         }
       });
 
+      new Vue ({
+        el: '#itempic1',
+        data: {
+          'shopItems': indexZero.slice(0, 4)
+        }
+      })
     });
 
   $('.product-images')
@@ -199,30 +214,3 @@ $.getJSON('../../api/etsy/listing-all.json')
 
 
 })(window);
-
-
-// new Vue ({
-//
-//   el: ".overview-bullets",
-//
-//   data: [
-//
-//     baseInfo: {body:
-//
-//     }
-//
-//   ],
-//
-//   components: {
-//     require '../../api/etsy/listing-variations'
-//   }
-//
-//   methods: {
-//
-//     },
-//
-//   },
-//
-//
-//
-// });
