@@ -21,7 +21,7 @@
         <div class="shop-icon unit-span-4">
 
           <div class="img-box">
-            <a href="#"><img src={{image_url_75x75}} id="storepic"></a>
+            <a href="#"><img src="{{image_url_75x75}}" id="storepic"></a>
           </div> <!--.img-box http://lorempixel.com/75/75/people-->
           <div class="shop-name-fav">
             <h4><a href="#" id="storename">{{store Name}}</a></h4>
@@ -32,7 +32,7 @@
         <div class="image-list unit-span-8">
             <div v-repeat="shopItems" class="img-box" id="itempic1">
                 <a href="#">
-                    <img src={{url_75x75}}>
+                    <img src="{{url_75x75}}">
                 </a>
             </div>
             <div class="img-box">
@@ -54,13 +54,16 @@
               <small>Add it to your favorites to revisit it later</small>
             </div> <!--.favorite-text-->
           </div> <!--.header-block-->
-          <div class="main-image unit-span-8" id="imageContainer">
+          <div class="main-image unit-span-8">
             <map name ="halfImage">
               <area id="firstHalf" shape="square" coords="0,0,285,570" href="#fail" />
               <area id="secondHalf" shape="square" coords="285,0,570,570" href="#fail2"/>
             </map>
-            <img usemap="#halfImage" src='http://lorempixel.com/570/570'>
+            <img usemap="#halfImage" src="{{listing.url_570xN}}" id="image-container">
           </div> <!--.main-image-->
+          <div class="product-images">
+            <a href="#image-container" v-repeat="productImages"><img src="{{url_75x75}}"></a>
+          </div> <!--.image-row-->
           <ul class="tab-row">
             <li class="active"><a href="#product-summary">Item Details</a></li><!--
          --><li><a href="#product-reviews"><span>&#9733;</span>(3,179)</a></li><!--
