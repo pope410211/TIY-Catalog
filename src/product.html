@@ -54,15 +54,15 @@
               <small>Add it to your favorites to revisit it later</small>
             </div> <!--.favorite-text-->
           </div> <!--.header-block-->
-          <div class="main-image unit-span-8" id="imageContainer">
+          <div class="main-image unit-span-8">
             <map name ="halfImage">
               <area id="firstHalf" shape="square" coords="0,0,285,570" href="#fail" />
               <area id="secondHalf" shape="square" coords="285,0,570,570" href="#fail2"/>
             </map>
-            <img usemap="#halfImage" src='http://lorempixel.com/570/570'>
+            <img usemap="#halfImage" src="{{listing.url_570xN}}" id="image-container">
           </div> <!--.main-image-->
-          <div class="product-images" v-repeat="productImages">
-            <img src={{url_75x75}}>
+          <div class="product-images">
+            <a href="#image-container" v-repeat="productImages"><img src="{{url_75x75}}"></a>
           </div> <!--.image-row-->
           <ul class="tab-row">
             <li class="active"><a href="#product-summary">Item Details</a></li><!--

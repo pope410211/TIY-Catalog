@@ -135,15 +135,21 @@ body {
     }
   }
 
-  .image-row {
+  .product-images {
     display: block;
     width: 90%;
     text-align: center;
     margin-top: 1.5em;
 
-    img {
-      width: 30px;
+    a {
       display: inline-block;
+      width: 30px;
+      height: 30px;
+
+      img {
+        width: 100%;
+        display: inline-block;
+      }
     }
   }
 

@@ -145,7 +145,40 @@ $.getJSON('../../api/etsy/listing-all.json')
           'productImages': productPhotos.results[0].Images
         }
       });
+  });
+
+  $.getJSON('../../api/etsy/listing-all.json')
+    .then(function(mainImage){
+
+      function mainImageStuff(data){
+        return {
+          url_570xN: data.url_570xN
+        }
+      };
+
+      new Vue ({
+        el: '.main-image',
+        data: {
+          'listing': mainImageStuff(mainImage.results[0].Images[0])
+        }
+      });
+
     });
+
+  $('.product-images')
+    .on('click', 'a[href^="#"]', function(event){
+      event.preventDefault();
+      var photo_fullsize = $(this).find('img').attr('src').replace('75x75', '570x570');
+      $('img', '.main-image').attr('src', photo_fullsize);
+      $(this).add(this.hash).trigger('activate');
+    })
+
+    .on('activate', 'a', function(event){
+      $(this)
+        .addClass('active')
+      .siblings()
+        .removeClass('active');
+    })
 
   $('li', '.tab-row').click(function(event){
       event.preventDefault();
