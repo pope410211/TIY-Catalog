@@ -1,0 +1,244 @@
+.results {
+  margin-top: 2em;
+}
+
+.sort {
+  float: right;
+}
+
+.listings {
+  width: 100%;
+}
+
+.column {
+    display: inline-block;
+    font-size: 14px;
+    border: 1px solid lightgrey;
+    border-radius: 2%;
+    margin: 1em;
+}
+.column img {
+    width: 15em;
+    height: 13em;
+}
+.column h4 {
+    margin: 0;
+}
+.column a {
+    text-decoration: none;
+    color: black;
+}
+.column .username {
+    float: left;
+    margin: 0;
+    color: darkgrey;
+}
+.column .price {
+    float: right;
+    margin: 0;
+    color: green;
+}
+
+.shop-suggestion {
+  display: inline-block;
+}
+
+.footer {
+  margin: 2em;
+}
+
+.shop-suggestion a {
+  padding: 1em;
+}
+.pagination a {
+  padding: 1em;
+}
+
+$sectionMargin: 2ex 0 0 0;
+$border: 1px solid #e1e3df;
+body {
+    background-color: #f5f5f1;
+    .leftBox {
+        padding: 1ex 2em 1ex 1em;
+        background-color: white;
+        border: $border;
+        border-radius: 1%;
+        ul {
+            margin: 0;
+            padding-left: 1em;
+        }
+        li {
+            list-style-type: none;
+        }
+        a {
+            text-decoration: none;
+            color: #028fb1;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+    #categorySelector {
+        ul {
+          padding: 0;
+        }
+        li {
+            padding-left: 1em;
+            padding-bottom: 1ex;
+        }
+        #header {
+          padding-left: 0;
+        }
+        .activeCat {
+          color: black;
+          font-weight: bold;
+        }
+    }
+    #refineSearch {
+        section {
+            margin: $sectionMargin;
+            border-bottom: $border;
+            padding-bottom: 2ex;
+        }
+        h5 {
+            margin: 0;
+            padding-bottom: 1ex;
+        }
+        ul {
+            padding: 0;
+        }
+        #itemType {
+            margin-top: 0;
+        }
+        #price {
+            .currencyinput {
+                border: $border;
+                width: 3.0em;
+                display: inline-block;
+                border-radius: 4px;
+                padding: 1ex 0.5em;
+            }
+            button {
+                padding: 1ex 0.8em;
+                border-radius: 4px;
+                background-color: white;
+                border: $border;
+            }
+            span {
+                width: 1em;
+            }
+            input {
+                width: 2em;
+                border: 0;
+            }
+            input:focus {
+                outline: none;
+            }
+        }
+        #color {
+            .color {
+                display: inline-block;
+                height: 2.3ex;
+                width: 2.3ex;
+                border: $border;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+            .red {
+                background-color: #f40b32;
+            }
+            .orange {
+                background-color: #ff7f00;
+            }
+            .yellow {
+                background-color: #f3cc0c;
+            }
+            .green {
+                background-color: #0ac20a;
+            }
+            .blue {
+                background-color: #00d0f7;
+            }
+            .purple {
+                background-color: #a60cf3;
+            }
+            .black {
+                background-color: black;
+            }
+        }
+        #shipTo {
+          select {
+            width: 100%;
+            line-height: 1ex;
+          }
+        }
+    }
+}
+.pagination {
+    background: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.page {
+    display: inline-block;
+    padding: 0px 9px;
+    border-radius: 3px;
+    border: solid 1px #c0c0c0;
+    background: #e9e9e9;
+    box-shadow: inset 0px 1px 0px rgba(255,255,255, .8), 0px 1px 3px rgba(0,0,0, .1);
+    font-size: .875em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #717171;
+    text-shadow: 0px 1px 0px rgba(255,255,255, 1);
+}
+
+.page:hover, .page.gradient:hover {
+    background: #fefefe;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FEFEFE), to(#f0f0f0));
+    background: -moz-linear-gradient(0% 0% 270deg,#FEFEFE, #f0f0f0);
+}
+
+.page.active {
+    border: none;
+    background: #616161;
+    box-shadow: inset 0px 0px 8px rgba(0,0,0, .5), 0px 1px 0px rgba(255,255,255, .8);
+    color: #f0f0f0;
+    text-shadow: 0px 0px 3px rgba(0,0,0, .5);
+}
+
+.page.gradient {
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f8f8f8), to(#e9e9e9));
+    background: -moz-linear-gradient(0% 0% 270deg,#f8f8f8, #e9e9e9);
+}
+
+.pagination.dark {
+    background: #414449;
+    color: #feffff;
+}
+
+.page.dark {
+    border: solid 1px #32373b;
+    background: #3e4347;
+    box-shadow: inset 0px 1px 1px rgba(255,255,255, .1), 0px 1px 3px rgba(0,0,0, .1);
+    color: #feffff;
+    text-shadow: 0px 1px 0px rgba(0,0,0, .5);
+}
+
+.page.dark:hover, .page.dark.gradient:hover {
+    background: #3d4f5d;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#547085), to(#3d4f5d));
+    background: -moz-linear-gradient(0% 0% 270deg,#547085, #3d4f5d);
+}
+
+.page.dark.active {
+    border: none;
+    background: #2f3237;
+    box-shadow: inset 0px 0px 8px rgba(0,0,0, .5), 0px 1px 0px rgba(255,255,255, .1);
+}
+
+.page.dark.gradient {
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#565b5f), to(#3e4347));
+    background: -moz-linear-gradient(0% 0% 270deg,#565b5f, #3e4347);
+}

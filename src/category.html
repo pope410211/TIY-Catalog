@@ -1,0 +1,200 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css" />
+    <!-- endbower -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="unit-span-4">
+            <h5>Show results for:</h5>
+            <aside class="leftBox" id="categorySelector">
+                <ul>
+                    <li id="header"><a href="#" class="activeCat">All categories</a></li>
+                    <li><a href="#">Jewelry</a></li>
+                    <li><a href="#">Craft Supplies &amp; Tools</a></li>
+                    <li><a href="#">Home &amp; Living</a></li>
+                    <li><a href="#">Art &amp; Collectibles</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Clothing</a></li>
+                    <li><a href="#">Paper &amp; Party Supplies</a></li>
+                    <li><a href="#">Bath &amp; Beauty</a></li>
+                    <li><a href="#">Bags &amp; Purses</a></li>
+                    <li><a href="#">Weddings</a></li>
+                    <li><a href="#">Toys &amp; Games</a></li>
+                    <li><a href="#">Books, Movies &amp; Music</a></li>
+                    <li><a href="#">Electronics &amp; Accessories</a></li>
+                    <li><a href="#">Pet Supplies</a></li>
+                    <li><a href="#">Shoes</a></li>
+                </ul>
+            </aside>
+            <h5>Refine your Search</h5>
+            <aside class="leftBox" id="refineSearch">
+                <section id="itemType">
+                    <h5>Item Type</h5>
+                    <ul>
+                        <li>
+                            <input type="radio"> <a href="#">All Items</a></li>
+                        <li>
+                            <input type="radio"> <a href="#">Handmade</a></li>
+                        <li>
+                            <input type="radio"> <a href="#">Vintage</a></li>
+                    </ul>
+                </section>
+                <section id="price">
+                    <h5>Price</h5>
+                    <div class="currencyinput">
+                        <span>$
+                            <input type="text" placeholder="low">
+                        </span>
+                    </div>
+                    <span>to</span>
+                    <div class="currencyinput">
+                        <span>$
+                            <input type="text" placeholder="high">
+                        </span>
+                    </div>
+                    <button>&#9654;</button>
+                </section>
+                <section id="color">
+                    <h5>Filter by Color</h5>
+                    <div>
+                        <div class="color red"></div>
+                        <div class="color orange"></div>
+                        <div class="color yellow"></div>
+                        <div class="color green"></div>
+                        <div class="color blue"></div>
+                        <div class="color purple"></div>
+                        <div class="color black"></div>
+                        <div class="color"></div>
+                    </div>
+                </section>
+                <section id="orderOptions">
+                    <h5>Ordering Options</h5>
+                    <ul>
+                        <li>
+                            <input type="checkbox"> <a href="#">In Your Favorites</a></li>
+                        <li>
+                            <input type="checkbox"> <a href="#">Accepts Etsy Gift Cards</a></li>
+                        <li>
+                            <input type="checkbox"> <a href="#">Customizable</a></li>
+                    </ul>
+                </section>
+                <section id="shopLoc">
+                    <h5>Shop Location</h5>
+                    <ul>
+                        <li>
+                            <input type="radio"> <a href="#">Anywhere</a></li>
+                        <li>
+                            <input type="radio"> <a href="#">United States</a></li>
+                        <li>
+                            <a href="#">Choose a custom location</a></li>
+                    </ul>
+                </section>
+                <section id="shipTo">
+                    <h5>Ship To</h5>
+                    <select name="shipTo">
+                        <option value="chooseCountry">Choose a country...</option>
+                        <optgroup label="--------">
+                          <option id="c1" value={{country_id1}}>{{name}}</option>
+                          <option id="c2" value={{country_id2}}>{{name}}</option>
+                          <option id="c3" value={{country_id3}}>{{name}}</option>
+                          <option id="c4" value={{country_id4}}>{{name}}</option>
+                          <option id="c5" value={{country_id5}}>{{name}}</option>
+                          <option id="c6" value={{country_id6}}>{{name}}</option>
+                          <option id="c7" value={{country_id7}}>{{name}}</option>
+                          <option id="c8" value={{country_id8}}>{{name}}</option>
+                          <option id="c9" value={{country_id9}}>{{name}}</option>
+                          <option id="c10" value={{country_id10}}>{{name}}</option>
+                          <option id="c11" value={{country_id11}}>{{name}}</option>
+                          <option id="c12" value={{country_id12}}>{{name}}</option>
+                          <option id="c13" value={{country_id13}}>{{name}}</option>
+                          <option id="c14" value={{country_id14}}>{{name}}</option>
+                          <option id="c15" value={{country_id15}}>{{name}}</option>
+                        </optgroup>
+                        <optgroup label="--------">
+                          <option id="fullList" v-repeat="countries" value={{country_id}}>{{name}}</option>
+                        </optgroup>
+                    </select>
+                </section>
+            </aside>
+        </div>
+    <div class="unit-span-8">
+        <section class="results">
+            <nav class="header-results">
+                <a href="#categories">
+                    <a>All Categories</a>
+                </a>
+                <a>(15,000,000 Results)</a>
+                <a class="sort">Sort by
+                <select>
+                    <option>Most Recent</option>
+                    <option>Relevancy</option>
+                    <option>Lowest Price</option>
+                    <option>Highest Price</option>
+                </select>
+                </a>
+            </nav>
+
+
+
+            <section class="listings">
+              <div v-repeat="items" class="column" id="listings">
+                  <a  href=#>
+                      <img src={{url_fullxfull}}>
+                      <h4>Original Crap You Must Buy</h4>
+                  </a>
+                  <a href="#">
+                      <p class="username">WHAT?!? 9000!?!?!?</p>
+                  </a>
+                  <p class="price">OVER $9000</p>
+              </div>
+            </section>
+
+            <section class="footer">
+                <div class="shop-suggestion">
+                    <a>Looking for shops?</a>
+                    <a href="#username1">JohnDoe</a>
+                    <a href="#username2">Batman</a>
+                    <a href="#username3">MarioBro</a>
+                    <a href="#seeMoreShops">See more</a>
+                </div>
+
+                <div class="pagination">
+                    <a class="previous-page page dark gradient">
+                        <span class=" ">
+                            <</span>
+                    </a><a href="#page-1" class="page dark gradient">1</a><a href="#page-2" class="page dark gradient">2</a><a href="#page-3" class="page dark gradient">3</a><a href="#page-4" class="page dark gradient">4</a><a href="#page-5" class="page dark gradient">5</a><a href="#page-6" class="page dark gradient">6</a><a href="#page-7" class="page dark gradient">7</a><a href="#page-8" class="page dark gradient">8</a><a href="#pages" class="page dark gradient">...</a><a href="#page-250" class="page dark gradient">250</a><a class="gradient next-page page dark">
+                        <span class=" ">
+                            ></span>
+                    </a>
+
+                </div>
+            </section>
+        </section>
+    </div>
+  </div>
+    <!-- bower:js -->
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/lodash/lodash.js"></script>
+    <script src="../bower_components/vue/dist/vue.js"></script>
+    <!-- endbower -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

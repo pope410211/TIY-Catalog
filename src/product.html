@@ -1,0 +1,221 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css" />
+    <!-- endbower -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <header class="header-row grid">
+        <div class="shop-icon unit-span-4">
+
+          <div class="img-box">
+            <a href="#"><img src="{{image_url_75x75}}" id="storepic"></a>
+          </div> <!--.img-box http://lorempixel.com/75/75/people-->
+          <div class="shop-name-fav">
+            <h4><a href="#" id="storename">{{store Name}}</a></h4>
+            <button class="favorite-shop">Favorite Shop</button>
+          </div>
+        </div> <!--.shop-icon-->
+
+        <div class="image-list unit-span-8">
+            <div v-repeat="shopItems" class="img-box" id="itempic1">
+                <a href="#">
+                    <img src="{{url_75x75}}">
+                </a>
+            </div>
+            <div class="img-box">
+                <a href="#">
+                    <span class="item-count">{{listing_active_count}}</span> <!-- 733 -->
+                    <span>items</span>
+                </a>
+            </div>
+        </div>
+        <!--.image-list unit-span-8-->
+    </header>
+    <!--.header-row grid-->
+    <div class="main-body grid">
+        <section class="left-column unit-span-8">
+          <div class="header-block">
+            <button><span>Favorite</span></button>
+            <div class="favorite-text">
+              <big>Like this item?</big><br>
+              <small>Add it to your favorites to revisit it later</small>
+            </div> <!--.favorite-text-->
+          </div> <!--.header-block-->
+          <div class="main-image unit-span-8">
+            <map name ="halfImage">
+              <area id="firstHalf" shape="square" coords="0,0,285,570" href="#fail" />
+              <area id="secondHalf" shape="square" coords="285,0,570,570" href="#fail2"/>
+            </map>
+            <img usemap="#halfImage" src="{{listing.url_570xN}}" id="image-container">
+          </div> <!--.main-image-->
+          <div class="product-images">
+            <a href="#image-container" v-repeat="productImages"><img src="{{url_75x75}}"></a>
+          </div> <!--.image-row-->
+          <ul class="tab-row">
+            <li class="active"><a href="#product-summary">Item Details</a></li><!--
+         --><li><a href="#product-reviews"><span>&#9733;</span>(3,179)</a></li><!--
+         --><li><a href="#shipping-policies">Shipping Policies</a></li>
+          </ul> <!--.tab-row-->
+          <div id="product-summary" class="panel-current">
+            <p>{{listing.description}}</p>
+          </div> <!--#product-summary-->
+          <div id="product-reviews">
+            <aside>
+              <img src="http://lorempixel.com/45/45/people">
+              <h5>Reviewed by <br>
+                Heather</h5>
+            </aside>
+            <figure>
+              <h5>&#9733;<span>{{product.review.date}}</span></h5>
+              <p>Messenger bag vegan crucifix, distillery iPhone fanny pack cardigan salvia selvage Shoreditch chillwave. Sartorial Etsy viral Helvetica distillery master cleanse.</p>
+              <h5 class="translate">Translate</h5>
+              <div class="reviewed-item">
+                <img src="http://lorempixel.com/45/45/cats">
+                <h5>The Title of These Items are Bullshit, FINAL SALE for Annoying Bullshit Products</h5>
+              </div>
+            </figure>
+          </div> <!--#product-reviews-->
+          <div id="shipping-policies">
+            <h5>Payment Methods</h5>
+            <h5>Ready to ship in 3-5 business days</h5>
+          </div> <!--#shipping-policies-->
+        </section> <!-- .left-column -->
+        <aside class="right-column">
+          <div class="unit-span-4 item-detail">
+            <div class="item-title">
+              <p id="productinfo">{{product.title}}</p>
+            </div> <!--.item-title-->
+            <div class="price-questions">
+              <div class="price-listing"><span>$</span><span id="cost">{{46.00}}</span><span class="currency" ><a href="#" id="money">{{USD}}</a></span></div>
+              <button class="seller-questions">Ask a Question</button>
+            </div> <!--.price-questions-->
+            <h5>Quantity</h5>
+            <select name="quantity">
+              <option value="1" selected>1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select> <!--.quantity-->
+            <h5>Color</h5>
+            <select id="colorOptions" name="color">
+              <option value="">Select a color</option>
+              <option v-repeat="colorOptions" value="hipster-gray">{{value}}</option>
+            </select> <!--.color-->
+            <h5 class="overview-heading">Overview</h5>
+            <ul class="overview-bullets">
+              <li v-repeat="baseInfo">{{ body.info }}</li>
+              <li>Made by hipsters, for hipsters</li>
+              <li>Not by hand</li>
+              <li>Turns heads at the coffee shop</li>
+              <li>Eat this, it's organic</li>
+              <li>Feedback: <a href="#">0 reviews</a></li>
+              <li>Favorited by: <a href="#">0 people</a></li>
+            </ul> <!--.overview-bullets-->
+            <h5 class="bottom-h5"><span class="giftcard-logo">&#128179;</span>This shop accepts Etsy Gift Cards</h5>
+          </div><!--.item-details-->
+          <div class="unit-span-4 add-item">
+            <button class="add-to-cart">Add to Cart</button>
+          </div> <!--.add-item-->
+          <section class="unit-span-4" id="buttonsSection">
+              <button>Favorite</button>
+              <button>Add to</button>
+              <div class="hidden" id="lists">
+                  <a href=#>Your Lists</a>
+                  <input name="input" value="none">
+              </div>
+          </section>
+          <section class="unit-span-4" id="share-buttons">
+              <a href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;name=Simple Share Buttons&amp;hashtags=simplesharebuttons" target="_blank">
+                  <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+              </a>
+              <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());">
+                  <img src="https://simplesharebuttons.com/images/somacro/pinterest.png" alt="Pinterest" />
+              </a>
+              <a href="http://www.tumblr.com/share/link?url=https://simplesharebuttons.com&amp;title=Simple Share Buttons" target="_blank">
+                  <img src="https://simplesharebuttons.com/images/somacro/tumblr.png" alt="Tumblr" />
+              </a>
+              <a href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com" target="_blank">
+                  <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+              </a>
+          </section>
+          <section class="shop-images unit-span-4">
+            <div class="seller-info">
+              <a href="#listing">
+                  <img src={{image_url_75x75}} id="avatar">
+                  <h4 id="store-name">{{store_name}}</h4>
+                  <p>in United States</p>
+              </a>
+            </div>
+              <div class="column" v-repeat="items">
+                  <a href="#listing">
+                      <img src="{{url_170x135}}">
+                      <h4>Original Crap For Sale</h4>
+                  </a>
+                  <p class="price">$10 USD</p>
+              </div>
+            </section><!--.shop-images-->
+          </aside><!--.right-column-->
+
+      </div class="main-body">
+
+      <section class="grid">
+          <div class="taxonomy">
+              <strong>Related to this Item</strong>
+              <br>
+              <button>
+                  <span>Beer</span>
+              </button>
+              <button>
+                  <span>Magic</span>
+              </button>
+              <button>
+                  <span>Sorcery</span>
+              </button>
+              <button>
+                  <span>Weird Stuff</span>
+              </button>
+              <button>
+                  <span>Cool Stuff</span>
+              </button>
+              <button>
+                  <span>Spatulas</span>
+              </button>
+              <button>
+                  <span>Stuff</span>
+              </button>
+              <button>
+                  <span>Liquor</span>
+              </button>
+              <button>
+                  <span>Fighting</span>
+              </button>
+              <button>
+                  <span>Video Games</span>
+              </button>
+          </div>
+      </section>
+
+    <!-- bower:js -->
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/lodash/lodash.js"></script>
+    <script src="../bower_components/vue/dist/vue.js"></script>
+    <!-- endbower -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
